@@ -40,4 +40,6 @@ zenmap
 
 <img width="785" alt="image" src="https://github.com/user-attachments/assets/9abeb0f6-83c8-4b3a-9f72-d90feac5406d" />
 
-
+- A ping scan in Zenmap is a quick way to discover active hosts on a network by sending ICMP echo requests (ping packets).
+- Quick Scan in Zenmap (or Nmap) is designed to rapidly scan a network or individual host to identify open ports and services without performing a deep inspection.
+- 
