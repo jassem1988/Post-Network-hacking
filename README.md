@@ -22,6 +22,10 @@ Post Network hacking like gathering information and MITM attacks
 ```bash
 ifconfig
 ```
+> Linux provides a command called ip and it has an option called addr (address). Type ip, a space, addr, and press Enter.
+```bash
+ip addr
+```
 - The IP address (e.g., 192.168.233.133) will follow immediately after inet.
 - We will use netdiscover to scan all the ip addresses range
 ```bash
@@ -42,4 +46,6 @@ zenmap
 
 - A ping scan in Zenmap is a quick way to discover active hosts on a network by sending ICMP echo requests (ping packets).
 - Quick Scan in Zenmap (or Nmap) is designed to rapidly scan a network or individual host to identify open ports and services without performing a deep inspection.
-- 
+- Quick Scan Plus
+This is an Nmap scan profile that performs a slightly more thorough scan compared to a regular "Quick Scan." Here's what it does: Scans the top 1000 TCP ports.
+Detects service versions (using -sV). Enables OS detection (using -O). Performs a traceroute (using --traceroute).
