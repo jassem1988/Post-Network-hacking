@@ -10,6 +10,8 @@ Post Network hacking like gathering information and MITM attacks
 ### Tools used
 
 - Netdiscover
+- Zenmap
+- nmap
 
 ### Steps to use netdiscover
 
@@ -26,3 +28,16 @@ ifconfig
 netdiscover -r 192.168.1.1/24
 ```
 - If we connect a wifi adapter then we can connect to Wifi from the VM of Kali linux and make a scan with the IP address of wlan0
+
+### Steps to use Zenmap
+
+- We open zenmap
+```bash
+zenmap
+```
+- We will enter the IP we want to scan and it will show us the nmap code for the profile you choose
+<img width="803" alt="image" src="https://github.com/user-attachments/assets/c1be386f-f06e-410b-93fe-f71286488ee4" />
+
+<img width="785" alt="image" src="https://github.com/user-attachments/assets/9abeb0f6-83c8-4b3a-9f72-d90feac5406d" />
+
+
