@@ -64,5 +64,9 @@ _gateway (192.168.233.2) at 00:50:56:e8:f0:27 [ether] on eth2
 - Now we go to the target machine and use arp -a command to see the MAC address of the router is changed to the VM MAC address
 <img width="466" alt="image" src="https://github.com/user-attachments/assets/9c2e45b6-52ca-48ec-9dba-f4bc034cf5c6" />
 
+- Tha Kali linux need to have port forwarding
+```bash
+  echo 1 > /proc/sys/net/ipv4/ip_forward
+```
 
 
