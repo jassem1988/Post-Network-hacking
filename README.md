@@ -58,5 +58,6 @@ arp -a
 _gateway (192.168.233.2) at 00:50:56:e8:f0:27 [ether] on eth2
 ```
 - Then we run arpspoof tool in two different terminals the top is to fool the victim and the bottom to fool the router
-![image](https://github.com/user-attachments/assets/4343846f-558f-49b8-b927-45971b6a6219)
+<img width="637" alt="image" src="https://github.com/user-attachments/assets/5a0edc68-be55-4e66-ac43-eab13807d124" />
+
 
