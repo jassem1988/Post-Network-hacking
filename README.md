@@ -49,3 +49,14 @@ zenmap
 - Quick Scan Plus
 This is an Nmap scan profile that performs a slightly more thorough scan compared to a regular "Quick Scan." Here's what it does: Scans the top 1000 TCP ports.
 Detects service versions (using -sV). Enables OS detection (using -O). Performs a traceroute (using --traceroute).
+
+### Steps for ARP Spoofing
+- We will use ifconfig to find the network interface that the our machine is connected to as well as the target
+- Then we use apr command to gateway IP and the network connected
+```bash
+arp -a
+_gateway (192.168.233.2) at 00:50:56:e8:f0:27 [ether] on eth2
+```
+- Then we run arpspoof tool in two different terminals the top is to fool the victim and the bottom to fool the router
+![image](https://github.com/user-attachments/assets/4343846f-558f-49b8-b927-45971b6a6219)
+
