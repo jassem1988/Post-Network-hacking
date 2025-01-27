@@ -52,6 +52,7 @@ Detects service versions (using -sV). Enables OS detection (using -O). Performs 
 
 ### Steps for ARP Spoofing
 - We will use ifconfig to find the network interface that the our machine is connected to as well as the target
+- In the target network we use arp -a to check the MAC address of the router
 - Then we use apr command to gateway IP and the network connected
 ```bash
 arp -a
@@ -59,5 +60,9 @@ _gateway (192.168.233.2) at 00:50:56:e8:f0:27 [ether] on eth2
 ```
 - Then we run arpspoof tool in two different terminals the top is to fool the victim and the bottom to fool the router
 <img width="637" alt="image" src="https://github.com/user-attachments/assets/5a0edc68-be55-4e66-ac43-eab13807d124" />
+
+- Now we go to the target machine and use arp -a command to see the MAC address of the router is changed to the VM MAC address
+<img width="466" alt="image" src="https://github.com/user-attachments/assets/9c2e45b6-52ca-48ec-9dba-f4bc034cf5c6" />
+
 
 
