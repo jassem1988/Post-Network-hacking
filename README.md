@@ -77,6 +77,26 @@ _gateway (192.168.233.2) at 00:50:56:e8:f0:27 [ether] on eth2
 ```bash
 bettercap -iface eth2
 ```
+- We can access the help menu by entering help and we can see all the modules we have
+
+<img width="359" alt="image" src="https://github.com/user-attachments/assets/a86952bb-ac4c-4197-98c2-26a2b111b6c4" />
+
+- We can see the discription of any module by typing help then the name of the module
+```bash
+help net.probe
+```
+- We can turn on net.probe by typing the following
+```bash
+net.probe on
+```
+> we can see the clients connected to the same network as our workstation.
+> The ***net.recon*** gets activated as well.
+
+- We type ***net.show*** to see all the connect clients in a table
 - 
+
+
+
+
 
 
