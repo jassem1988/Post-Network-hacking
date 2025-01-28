@@ -1,17 +1,20 @@
 # Wireless Network Security Analysis
 
 ## Objective
-Post Network hacking like gathering information and MITM attacks
+Post Network monitoring like gathering information and checking if MITM attacks are possible
 
 ### Skills Learned
 
 - Connecting wireless adapter to Virtual Machine
+- Maping a network either wired or wireless
 
 ### Tools used
 
 - Netdiscover
 - Zenmap
 - nmap
+- ARP spoof
+- Bettercap
 
 ### Steps to use netdiscover
 
@@ -68,5 +71,12 @@ _gateway (192.168.233.2) at 00:50:56:e8:f0:27 [ether] on eth2
 ```bash
   echo 1 > /proc/sys/net/ipv4/ip_forward
 ```
+### Steps for Bettercap
+
+- To access to the Bettercap prompt we will put the interface we are connected to
+```bash
+bettercap -iface eth2
+```
+- 
 
 
