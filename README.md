@@ -104,8 +104,18 @@ set arp.spoof.fullduplex true
 - We will also change the targets parameter
 ```bash
 arp.spoof.targets : Comma separated list of IP addresses, MAC addresses or aliases to spoof, also supports nmap style IP ranges. (default=<entire subnet>)
+set arp.spoof.targets (the IP address of the target)
 ```
-
+- We need to turn the **arp.spoof** on
+```bash
+arp.spoof on
+```
+> make sure net.probe and net.recon are both running
+- Now MITM attack is a success
+- We then activate net.sniff to capture all the packets that come from the target
+```bash
+net.sniff
+```    
 
 
 
