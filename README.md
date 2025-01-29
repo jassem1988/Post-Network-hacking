@@ -93,7 +93,18 @@ net.probe on
 > The ***net.recon*** gets activated as well.
 
 - We type ***net.show*** to see all the connect clients in a table
-- 
+- We can use ***arp.spoof*** module to make arp spoof attacks
+```bash
+help arp.spoof
+```
+- We will change the parameter **arp.spoof.fullduplex** : If true, both the targets and the gateway will be attacked, otherwise only the target (if the router has ARP spoofing protections in place this will make the attack fail). (default=false)
+```bash
+set arp.spoof.fullduplex true
+```
+- We will also change the targets parameter
+```bash
+arp.spoof.targets : Comma separated list of IP addresses, MAC addresses or aliases to spoof, also supports nmap style IP ranges. (default=<entire subnet>)
+```
 
 
 
