@@ -116,7 +116,7 @@ arp.spoof on
 ```bash
 net.sniff
 ```    
-
+> To see details on currently running modules at any time, use the **active** command.
 
 
 
