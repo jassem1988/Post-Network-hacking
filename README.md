@@ -118,6 +118,18 @@ net.sniff
 ```    
 > To see details on currently running modules at any time, use the **active** command.
 
+### Steps to create a custom spoof script (caplet)
+
+- We open a text editor in Kali
+- We type the list of commands one per line
+<img width="347" alt="image" src="https://github.com/user-attachments/assets/a50fee49-aa13-40fa-8a11-a6f4512edfe6" />
+- We ls to the .cap file we made
+- Then we write the command
+```bash
+bettercap -iface wlan0 -caplet FILENAME.cap
+```
+
+
 
 
 
