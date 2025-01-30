@@ -18,7 +18,7 @@ Post Network monitoring like gathering information and checking if MITM attacks 
 
 ### Steps to use netdiscover
 
-- In Kali linux we will use ifcofig to find our IP address
+- In Kali linux we will use ifconfig to find our IP address
 - Look for Your Active Network Interface:
   - If you’re using Ethernet (wired connection), the interface is likely eth0 or enp0s3.
   - If you’re using Wi-Fi, the interface is usually wlan0 or wlp2s0.
