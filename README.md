@@ -149,7 +149,9 @@ set dns.spoof.domains <the website>, *.<All the subdomains of the website>
 dns.spoof on
 ```
 
+### Steps to Inject JS
 
+- Create a javascript code and save it
 
 
 
