@@ -142,6 +142,7 @@ bettercap -iface wlan0 -caplet FILENAME.cap
 - We can edit the html pages and replace it with whatever we want
 - We start the bettercap with the spoof.cap caplet
 - We will use **dns.spoof** and activate **dns.spoof.all** and dns.spoof.domains and start the DNS spoof
+  
 ```bash
 set dns.spoof.all true
 set dns.spoof.domains <the website>, *.<All the subdomains of the website>
