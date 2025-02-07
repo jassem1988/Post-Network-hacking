@@ -29,7 +29,7 @@ ifconfig
 ```bash
 ip addr
 ```
-- The IP address (e.g., 192.168.233.133) will follow immediately after inet.
+- The IP address will follow immediately after inet.
 - We will use netdiscover to scan all the ip addresses range
 ```bash
 netdiscover -r 192.168.1.1/24
